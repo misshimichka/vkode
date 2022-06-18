@@ -2,8 +2,7 @@ import requests
 import time
 
 address = "https://api.vk.com/method/photos.getAlbums?owner_id=-197700721&v=5.131&access_token="
-TOKEN = "vk1.a.FzlLrI7sqk_DcA_mmTlbxnXCajSXyAUrZgpNQIPTyAAoyCDla48PDBpSXf3D3gv_XHtgpknE6yXnOMJdOiHtw4fQqh7cRsHMxGmpVtx5UAxP9FQ1q4XDNOSMZWYJlW-CLR0aQhPyy4CO-cFtgvamNWH-6PiwDV12l0M7I8njZ-D-982WMLWt6Ujjm7NsBMlM"
-
+TOKEN = "PASTE YOUR TOKEN HERE"
 html = requests.get(address + TOKEN).json()
 
 albums = html["response"]["items"]
